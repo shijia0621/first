@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>第一个代码</title>
+    <title>第一个插件代码（纯JS简洁mp3播放器）</title>
 </head>
 <body>
-    <hi>第一个代码</hi>
-    <p>hi,大家好，我是石头！</p>
+    
+    <div class="container" id="box">
+        <hi>纯JS简洁mp3播放器</hi>
+
+    </div>
+<script src="./Mplay.js"></script>
+<script>
+    Mplay({
+        audioUrl: [{
+            title: "不要假装对我好",
+            source: "http://sc1.111ttt.com/2017/1/05/10/298101005554.mp3"
+        }, {
+            title: "I Like You The Way You",
+            source: "http://sc1.111ttt.com/2017/1/05/09/298092204432.mp3"
+        }],
+        //audioUrl: "http://sc1.111ttt.com/2017/1/05/10/298101005554.mp3",
+        nodeID: "box",
+        boxStyle: "top:200px;left:50px;"
+
+    });
+</script>    
 </body>
 </html>
