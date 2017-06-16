@@ -40,9 +40,7 @@
 
         audioButton.state = true;
 
-
         var _urlType = toString.apply(settings.audioUrl);
-        console.log(_urlType);
 
         if (_urlType === '[object Object]') {
             var _temp = [];
